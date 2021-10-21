@@ -1,5 +1,5 @@
 # Is Nuxt 3 ready?
-Your best up-to-date guide for the compatibility of your next Nuxt module. Built using Nuxt 3 and WindiCSS. Based on the initial work by @pi0 and inspired by [_Is Apple Silicon ready?_](https://isapplesiliconready.com)
+Your best up-to-date guide for the compatibility for Nuxt 3 modules. Built using Nuxt 3 and WindiCSS. Based on the initial work by @pi0 and inspired by [_Is Apple Silicon ready?_](https://isapplesiliconready.com)
 
 ## API access
 _Is Nuxt 3 Ready_ offers a free API for developers and repo maintainers. Note that this assumes good faith and, in the event of being misused, it might be shutdown or restricted.
