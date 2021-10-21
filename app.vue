@@ -9,7 +9,7 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
         <h1
           class="text-4xl md:text-[60px] font-bold text-nuxt-light text-center leading-loose mt-12"
         >Is Nuxt 3 ready?</h1>
-         <Title>Is Nuxt 3 ready?</Title>
+        <Title>Is Nuxt 3 ready?</Title>
         <p
           class="text-center text-md md:text-lg"
         >A community-built compatibility guide for Nuxt 3 modules</p>
@@ -26,7 +26,11 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
           :maintainers="module.maintainers"
         />
       </section>
-      <footer class="text-center">Built with ♥️ by <a href="https://owln.ai" class="underline">@owlnai</a> and other maintainers. <a href="https://github.com/owlnai/isnuxt3ready" class="underline">Contribute</a></footer>
+      <footer class="text-center">
+        Built with ♥️ by
+        <a href="https://owln.ai" class="underline">@owlnai</a> and other maintainers.
+        <a href="https://github.com/owlnai/isnuxt3ready" class="underline">Contribute</a>
+      </footer>
     </div>
   </div>
 </template>
