@@ -9,6 +9,7 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
         <h1
           class="text-4xl md:text-[60px] font-bold text-nuxt-light text-center leading-loose mt-12"
         >Is Nuxt 3 ready?</h1>
+         <Title>Is Nuxt 3 ready?</Title>
         <p
           class="text-center text-md md:text-lg"
         >A community-built compatibility guide for Nuxt 3 modules</p>
