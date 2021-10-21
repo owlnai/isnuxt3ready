@@ -33,5 +33,27 @@
         "core": "unknown",
         "maintainers": "@kieusonlam",
         "repoUrl": "https://github.com/nuxt-community/apollo-module"
+    },
+    {
+        "name": "@nuxtjs/auth",
+        "bridge": "unknown",
+        "core": "pending",
+        "maintainers": "@pi0",
+        "repoUrl": "https://github.com/nuxt-community/auth-module"
+    },
+    {
+        "name": "@nuxtjs/axios",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@pi0",
+        "repoUrl": "https://github.com/nuxt-community/axios-module",
+        "issueUrl": "https://github.com/nuxt-community/axios-module/issues/536"
+    },
+    {
+        "name": "@nuxtjs/cloudinary",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@mayashavin",
+        "repoUrl": "https://github.com/nuxt-community/cloudinary-module"
     }
 ]
