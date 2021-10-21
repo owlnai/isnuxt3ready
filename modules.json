@@ -1,0 +1,23 @@
+[
+    {
+        "name": "@nuxt/content@1.x",
+        "bridge": "unsupported",
+        "core": "unsupported",
+        "maintainer": "",
+        "issueUrl": "https://github.com/nuxt/content/issues/974",
+        "repoUrl": "https://github.com/nuxt/content"
+    },
+    {
+        "name": "@nuxt/content@2.x",
+        "bridge": "pending",
+        "core": "pending",
+        "maintainer": "@nuxt/framework"
+    },
+    {
+        "name": "@nuxt/image",
+        "bridge": "ready",
+        "core": "pending",
+        "maintainer": "@nuxt/framework, @pi",
+        "repoUrl": "https://github.com/nuxt/image"
+    }
+]
