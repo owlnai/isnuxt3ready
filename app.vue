@@ -3,32 +3,28 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
 </script>
 
 <template>
-  <div
-    class="bg-[#012A35] text-white min-h-screen font-sans p-4 sm:p-8 transition-colors duration-300"
-  >
+  <div class="bg-nuxt-darkest text-white min-h-screen font-sans p-4 sm:p-8">
     <div class="max-w-6xl mx-auto">
-      <section class="my-12">
-        <h1 class="text-[60px] font-bold text-[#00DC82] text-center leading-normal">Is Nuxt 3 ready?</h1>
+      <section>
+        <h1
+          class="text-[60px] font-bold text-nuxt-light text-center leading-normal"
+        >Is Nuxt 3 ready?</h1>
         <p
-          class="text-center"
-        >Your best up-to-date guide for the compatibility of your next Nuxt module</p>
+          class="text-center text-lg"
+        >A community-built compatibility guide of your next Nuxt 3 module</p>
       </section>
-      <section class="grid grid-cols-3 gap-4 grid-flow-row">
-        <article v-for="module in data" :key="module.name" class="rounded-sm bg-[#003543] p-4">
-          <h2 class="font-semibold text-2xl">{{ module.name }}</h2>
-          <div>Nuxt Bridge: {{ module.bridge }}</div>
-          <div>Nuxt 3: {{ module.core }}</div>
-          <div class="flex justify-between mt-6">
-            <a
-              class="text-xl text-opacity-50"
-              :href="module.repoUrl"
-              v-if="module.repoUrl"
-            >{{ module.repoUrl.split(".com/").pop() }}</a>
-            <span v-else>[TBA]</span>
-            <a :href="module.issueUrl" v-if="module.issueUrl">Issue Tracker</a>
-          </div>
-        </article>
+      <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 grid-flow-row my-12">
+        <Card
+          v-for="module in data"
+          :key="module.name"
+          :title="module.name"
+          :bridge="module.bridge"
+          :core="module.core"
+          :repoUrl="module.repoUrl"
+          :issueUrl="module.issueUrl"
+        />
       </section>
+      <footer class="text-center">Built with ♥️ by <a href="https://owln.ai" class="underline">@owlnai</a> and other maintainers</footer>
     </div>
   </div>
 </template>
