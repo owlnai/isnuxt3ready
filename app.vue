@@ -11,7 +11,7 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
         >Is Nuxt 3 ready?</h1>
         <p
           class="text-center text-md md:text-lg"
-        >A community-built compatibility guide of your next Nuxt 3 module</p>
+        >A community-built compatibility guide for Nuxt 3 modules</p>
       </section>
       <section class="grid grid-cols-1 lg:grid-cols-3 gap-8 grid-flow-row my-12">
         <Card
