@@ -28,7 +28,7 @@ function color(status) {
 }
 </script>
 <template>
-    <article class="rounded-sm bg-nuxt-dark p-6 shadow-md">
+    <article class="rounded-md bg-nuxt-dark p-6 shadow-md">
         <h2 class="font-semibold text-2xl mb-4">{{ title }}</h2>
         <div class="flex justify-between mb-2">
             <div>
