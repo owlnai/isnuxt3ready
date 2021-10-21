@@ -3,7 +3,7 @@
         "name": "@nuxt/content@1.x",
         "bridge": "unsupported",
         "core": "unsupported",
-        "maintainer": "",
+        "maintainers": "",
         "issueUrl": "https://github.com/nuxt/content/issues/974",
         "repoUrl": "https://github.com/nuxt/content"
     },
@@ -11,13 +11,27 @@
         "name": "@nuxt/content@2.x",
         "bridge": "pending",
         "core": "pending",
-        "maintainer": "@nuxt/framework"
+        "maintainers": "@nuxt/framework"
     },
     {
         "name": "@nuxt/image",
         "bridge": "ready",
         "core": "pending",
-        "maintainer": "@nuxt/framework, @pi",
+        "maintainers": "@nuxt/framework, @pi0",
         "repoUrl": "https://github.com/nuxt/image"
+    },
+    {
+        "name": "@nuxtjs/pwa",
+        "bridge": "ready",
+        "core": "pending",
+        "maintainers": "@pi0",
+        "repoUrl": "https://github.com/nuxt-community/pwa-module"
+    },
+    {
+        "name": "@nuxtjs/apollo",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@kieusonlam",
+        "repoUrl": "https://github.com/nuxt-community/apollo-module"
     }
 ]

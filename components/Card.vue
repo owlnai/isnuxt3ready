@@ -6,6 +6,7 @@ defineProps({
     bridge: String,
     repoUrl: String,
     issueUrl: String,
+    maintainers: String,
 });
 
 function color(status) {
@@ -17,7 +18,7 @@ function color(status) {
             return "bg-yellow-500 text-black";
 
         case 'unknown':
-            return "bg-white";
+            return "bg-white text-black";
 
         case 'bugged':
             return "bg-orange-600";
@@ -28,8 +29,11 @@ function color(status) {
 }
 </script>
 <template>
-    <article class="rounded-md bg-nuxt-dark p-6 shadow-md">
-        <h2 class="font-semibold text-2xl mb-4">{{ title }}</h2>
+    <article class="rounded-md bg-nuxt-dark p-5 shadow-md">
+        <div class="mb-4">
+            <h2 class="font-semibold text-2xl">{{ title }}</h2>
+            <p class="text-sm">{{ maintainers || '-' }}</p>
+        </div>
         <div class="flex justify-between mb-2">
             <div>
                 <Core class="h-6 w-6 mr-2 inline-block" />Nuxt Core
@@ -47,12 +51,8 @@ function color(status) {
             >{{ bridge }}</span>
         </div>
         <div class="flex justify-between mt-4">
-            <a
-                class="text-xl"
-                :href="repoUrl"
-                v-if="repoUrl"
-            >{{ repoUrl.split(".com/").pop() }}</a>
-            <span v-else>[TBA]</span>
+            <a class="text-lg" :href="repoUrl" v-if="repoUrl">{{ repoUrl.split(".com/").pop() }}</a>
+            <span class="text-lg" v-else>[TBA]</span>
             <a :href="issueUrl" v-if="issueUrl">
                 <GitHub class="h-6 w-6" />
             </a>

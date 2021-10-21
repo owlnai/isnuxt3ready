@@ -3,7 +3,7 @@ Your best up-to-date guide for the compatibility of your next Nuxt module. Built
 
 ## API access
 _Is Nuxt 3 Ready_ offers a free API for developers and repo maintainers. Note that this assumes good faith and, in the event of being misused, it might be shutdown or restricted.
-- `/api/modules`: Gets an array of objects listing every module
+- `/api/modules` Gets an array of objects listing every module
 - `/api/modules/:module` (e.g /api/modules/@nuxt-image): Gets an object listing the specified module
 ## Status guide
 - `ready` ✅ Tested and working
