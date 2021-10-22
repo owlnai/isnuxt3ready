@@ -18,7 +18,7 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
   <div class="bg-[#151718] text-gray-200 min-h-screen font-sans">
     <div class="blurry-gradient"></div>
     <div class="p-4 sm:p-8 z-20 relative">
-      <SeoInjector />
+      <Title>Is Nuxt 3 ready?</Title>
       <div class="max-w-6xl mx-auto">
         <section class="my-24">
           <h1
