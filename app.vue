@@ -13,12 +13,12 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
 }
 </style>
 <template>
-  <div class="bg-[#151718] text-white min-h-screen font-sans">
+  <div class="bg-[#151718] text-gray-200 min-h-screen font-sans">
     <div class="blurry-gradient"></div>
     <div class="p-4 sm:p-8 z-20 relative">
       <Title>Is Nuxt 3 ready?</Title>
       <div class="max-w-6xl mx-auto">
-        <section class="my-28">
+        <section class="my-24">
           <h1
             class="text-4xl md:text-[60px] font-bold text-nuxt-light text-center leading-loose"
           >Is Nuxt 3 ready?</h1>
