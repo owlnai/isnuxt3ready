@@ -29,10 +29,11 @@
     },
     {
         "name": "@nuxtjs/apollo",
-        "bridge": "unknown",
+        "bridge": "bugged",
         "core": "unknown",
         "maintainers": "@kieusonlam",
-        "repoUrl": "https://github.com/nuxt-community/apollo-module"
+        "repoUrl": "https://github.com/nuxt-community/apollo-module",
+        "issueUrl": "https://github.com/nuxt-community/apollo-module/issues/402"
     },
     {
         "name": "@nuxtjs/auth",
