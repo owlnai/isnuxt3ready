@@ -7,7 +7,7 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
   @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
   background: radial-gradient(
       circle at 15% 50%,
-      #09846677,
+      #09846655,
       rgba(255, 255, 255, 0) 25%
     ),
     radial-gradient(circle at 85% 30%, #003543, rgba(255, 255, 255, 0) 25%);
