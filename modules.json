@@ -58,7 +58,7 @@
     },
     {
         "name": "@nuxtjs/color-mode",
-        "bridge": "bridge",
+        "bridge": "ready",
         "core": "unknown",
         "maintainers": "Atinux",
         "repoUrl": "https://github.com/nuxt-community/color-mode-module"
