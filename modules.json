@@ -170,5 +170,34 @@
         "core": "ready",
         "maintainers": "@posva",
         "repoUrl": "https://github.com/posva/pinia/tree/v2/packages/nuxt"
+    },
+    {
+        "name": "@nuxtjs/google-fonts",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@ricardogobbosouza",
+        "repoUrl": "https://github.com/nuxt-community/google-fonts-module"
+    },
+    {
+        "name": "nuxt-graphql-request",
+        "bridge": "bugged",
+        "core": "unknown",
+        "maintainers": "@Gomah",
+        "repoUrl": "https://github.com/Gomah/nuxt-graphql-request",
+        "issueUrl": "https://github.com/Gomah/nuxt-graphql-request/issues/36"
+    },
+    {
+        "name": "@pnodev/nuxt-directus",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@pnodedev",
+        "repoUrl": "https://github.com/pnodev/nuxt-directus"
+    },
+    {
+        "name": "@nuxtjs/gtm",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@pnodedev",
+        "repoUrl": "https://github.com/pnodev/nuxt-directus"
     }
 ]
