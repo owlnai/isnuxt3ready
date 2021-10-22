@@ -12,7 +12,7 @@ defineProps({
 function color(status) {
     switch (status) {
         case 'ready':
-            return "bg-green-600";
+            return "bg-green-800";
 
         case 'pending':
             return "bg-yellow-500 text-black";
@@ -21,9 +21,9 @@ function color(status) {
             return "bg-gray-700";
 
         case 'bugged':
-            return "bg-orange-600";
+            return "bg-orange-800";
         case 'unsupported':
-            return "bg-red-600";
+            return "bg-red-700";
 
     }
 }
