@@ -55,5 +55,120 @@
         "core": "bugged",
         "maintainers": "@mayashavin",
         "repoUrl": "https://github.com/nuxt-community/cloudinary-module"
+    },
+    {
+        "name": "@nuxtjs/color-mode",
+        "bridge": "bridge",
+        "core": "unknown",
+        "maintainers": "Atinux",
+        "repoUrl": "https://github.com/nuxt-community/color-mode-module"
+    },
+    {
+        "name": "@nuxtjs/date-fns",
+        "bridge": "pending",
+        "core": "pending",
+        "maintainers": "@ricardogobbosouza",
+        "repoUrl": "https://github.com/date-fns-module",
+        "issueUrl": "https://github.com/date-fns-module/issues/62"
+    },
+    {
+        "name": "@nuxtjs/guess",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@clarkdo",
+        "repoUrl": "https://github.com/nuxt-community/guess-module"
+    },
+    {
+        "name": "@nuxtjs/html-validator",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@danielroe",
+        "repoUrl": "https://github.com/nuxt-community/html-validator-module"
+    },
+    {
+        "name": "@nuxtjs/i18n",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@paulgv, @rchl",
+        "repoUrl": "https://github.com/nuxt-community/i18n-module"
+    },
+    {
+        "name": "@nuxtjs/i18n",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@paulgv, @rchl",
+        "repoUrl": "https://github.com/nuxt-community/i18n-module"
+    },
+    {
+        "name": "@nuxtjs/redirect-module",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@manniL",
+        "repoUrl": "https://github.com/nuxt-community/redirect-module"
+    },
+    {
+        "name": "@nuxtjs/router",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@ricardogobbosouza",
+        "repoUrl": "https://github.com/nuxt-community/router-module",
+        "issueUrl": "https://github.com/nuxt-community/router-module/issues/108"
+    },
+    {
+        "name": "@nuxtjs/sanity",
+        "bridge": "pending",
+        "core": "unknown",
+        "maintainers": "@danielroe",
+        "repoUrl": "https://github.com/nuxt-community/sanity-module"
+    },
+    {
+        "name": "@nuxtjs/sentry",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@rchl",
+        "repoUrl": "https://github.com/nuxt-community/sentry-module"
+    },
+    {
+        "name": "@nuxtjs/strapi",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@benjamincanac, @Atinux",
+        "repoUrl": "https://github.com/nuxt-community/strapi-module"
+    },
+    {
+        "name": "@nuxtjs/style-resources",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@manniL",
+        "repoUrl": "https://github.com/nuxt-community/style-resources-module"
+    },
+    {
+        "name": "@nuxtjs/tailwindcss",
+        "bridge": "pending",
+        "core": "pending",
+        "maintainers": "@Atinux",
+        "repoUrl": "https://github.com/nuxt-community/tailwindcss-module",
+        "issueUrl": "https://github.com/nuxt-community/tailwindcss-module/issues/386"
+    },
+    {
+        "name": "@nuxtjs/vuetify",
+        "bridge": "pending",
+        "core": "bugged",
+        "maintainers": "-",
+        "repoUrl": "https://github.com/nuxt-community/vuetify-module"
+    },
+    {
+        "name": "nuxt-windicss",
+        "bridge": "ready",
+        "core": "ready",
+        "maintainers": "@harlan-zw, @antfu",
+        "repoUrl": "https://github.com/windicss/nuxt-windicss-module"
+    },
+    {
+        "name": "pinia/nuxt",
+        "bridge": "ready",
+        "core": "ready",
+        "maintainers": "@posva",
+        "repoUrl": "https://github.com/posva/pinia/tree/v2/packages/nuxt"
     }
 ]
