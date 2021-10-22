@@ -18,7 +18,7 @@ function color(status) {
             return "bg-yellow-500 text-black";
 
         case 'unknown':
-            return "bg-white text-black";
+            return "bg-gray-700";
 
         case 'bugged':
             return "bg-orange-600";
@@ -29,32 +29,40 @@ function color(status) {
 }
 </script>
 <template>
-    <article class="rounded-md bg-nuxt-dark p-5 shadow-md">
-        <div class="mb-4">
-            <h2 class="font-semibold text-2xl">{{ title }}</h2>
-            <p class="text-sm">{{ maintainers || '-' }}</p>
-        </div>
-        <div class="flex justify-between mb-2">
-            <div>
-                <Core class="h-6 w-6 mr-2 inline-block" />Nuxt Core
+    <article class="rounded-md bg-gradient-to-b from-nuxt-darkest to-[#101B1F] shadow-md">
+        <div class="p-4">
+            <div class="mb-4">
+                <h2 class="font-semibold text-2xl">{{ title }}</h2>
+                <p class="text-sm">{{ maintainers || '-' }}</p>
             </div>
-            <span
-                :class="`text-sm  font-medium uppercase tracking-wider ${color(core)} py-1 px-4 rounded-full`"
-            >{{ core }}</span>
-        </div>
-        <div class="flex justify-between gap-2">
-            <div>
-                <Bridge class="h-6 w-6 mr-2 inline-block" />Nuxt Bridge
+            <div class="flex justify-between mb-2">
+                <div>
+                    <Core class="h-6 w-6 mr-2 inline-block" />Nuxt Core
+                </div>
+                <span
+                    :class="`text-xs  font-medium uppercase tracking-wider ${color(core)} py-1 px-4 rounded-full`"
+                >{{ core }}</span>
             </div>
-            <span
-                :class="`text-sm font-medium uppercase tracking-wider ${color(bridge)} py-1 px-4 rounded-full`"
-            >{{ bridge }}</span>
+            <div class="flex justify-between gap-2">
+                <div>
+                    <Bridge class="h-6 w-6 mr-2 inline-block" />Nuxt Bridge
+                </div>
+                <span
+                    :class="`text-xs font-medium uppercase tracking-wider ${color(bridge)} py-1 px-4 rounded-full`"
+                >{{ bridge }}</span>
+            </div>
         </div>
-        <div class="flex justify-between mt-4">
-            <a class="text-lg" :href="repoUrl" v-if="repoUrl">{{ repoUrl.split(".com/").pop() }}</a>
-            <span class="text-lg" v-else>[TBA]</span>
+        <div class="flex justify-between p-4 bg-nuxt-darkest rounded-b-md">
+            <a class="text-sm items-center inline-flex gap-2" :href="repoUrl" v-if="repoUrl">
+                <GitHub class="h-5 w-5" />
+                {{ repoUrl.split(".com/").pop() }}
+            </a>
+            <span v-else class="text-sm items-center inline-flex gap-2">       
+                <GitHub class="h-5 w-5" />
+                TBA
+            </span>
             <a :href="issueUrl" v-if="issueUrl">
-                <GitHub class="h-6 w-6" />
+                <GitIssue class="h-5 w-5" />
             </a>
         </div>
     </article>
