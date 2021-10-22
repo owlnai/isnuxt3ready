@@ -197,7 +197,7 @@
         "name": "@nuxtjs/gtm",
         "bridge": "unknown",
         "core": "unknown",
-        "maintainers": "@pnodedev",
-        "repoUrl": "https://github.com/pnodev/nuxt-directus"
+        "maintainers": "@pi0",
+        "repoUrl": "https://github.com/nuxt-community/gtm-module"
     }
 ]
