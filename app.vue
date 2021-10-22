@@ -3,7 +3,7 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
 </script>
 <style>
 .blurry-gradient {
-  @apply w-full top-0 left-0 h-screen fixed overflow-hidden z-10;
+  @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
   background: radial-gradient(
       circle at 15% 50%,
       #09846677,
@@ -27,10 +27,10 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
           >A community-built compatibility guide for Nuxt 3 modules</p>
           <div class="flex flex-col sm:flex-row justify-center gap-4 my-6">
             <div
-              class="border-nuxt-light border py-2 px-8 rounded-md font-medium inline-block"
+              class="border-nuxt-light border py-2 px-8 rounded-md font-medium inline-block text-center"
             >Contribute data</div>
             <div
-              class="border-nuxt-light border py-2 px-8 rounded-md font-medium inline-block"
+              class="border-nuxt-light border py-2 px-8 rounded-md font-medium inline-block text-center"
             >Star this project</div>
           </div>
         </section>
