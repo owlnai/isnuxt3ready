@@ -26,12 +26,12 @@ const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
             class="text-center text-md md:text-lg mt-6 text-green-100"
           >A community-built compatibility guide for Nuxt 3 modules</p>
           <div class="flex flex-col sm:flex-row justify-center gap-4 my-6">
-            <div
-              class="border-nuxt-light border py-2 px-8 rounded-md font-medium inline-block text-center"
-            >Contribute data</div>
-            <div
-              class="border-nuxt-light border py-2 px-8 rounded-md font-medium inline-block text-center"
-            >Star this project</div>
+            <a href="/api/modules"
+              class="border-nuxt-light hover:bg-nuxt-dark transition-colors duration-300 text-white border py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+            > <GetApi />Explore API data</a>
+            <a href="https://github.com/owlnai/isnuxt3ready"
+              class="border-nuxt-light hover:bg-nuxt-dark transition-colors duration-300 border text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+            > <GitStar />Star this project</a>
           </div>
         </section>
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 grid-flow-row my-12">
