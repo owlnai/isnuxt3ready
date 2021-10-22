@@ -37,7 +37,7 @@ function color(status) {
             </div>
             <div class="flex justify-between mb-2">
                 <div>
-                    <Core class="h-6 w-6 mr-2 inline-block" />Nuxt Core
+                    <Core class="h-6 w-6 mr-2 inline-block" />Nuxt 3
                 </div>
                 <span
                     :class="`text-xs  font-medium uppercase tracking-wider ${color(core)} py-1 px-4 rounded-full`"
