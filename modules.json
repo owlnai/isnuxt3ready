@@ -60,9 +60,10 @@
     {
         "name": "@nuxtjs/color-mode",
         "bridge": "ready",
-        "core": "unknown",
+        "core": "bugged",
         "maintainers": "Atinux",
-        "repoUrl": "https://github.com/nuxt-community/color-mode-module"
+        "repoUrl": "https://github.com/nuxt-community/color-mode-module",
+        "issueUrl": "https://github.com/nuxt-community/color-mode-module/issues/110"
     },
     {
         "name": "@nuxtjs/date-fns",
@@ -134,7 +135,8 @@
         "bridge": "unknown",
         "core": "unknown",
         "maintainers": "@benjamincanac, @Atinux",
-        "repoUrl": "https://github.com/nuxt-community/strapi-module"
+        "repoUrl": "https://github.com/nuxt-community/strapi-module",
+        "issueUrl": "https://github.com/nuxt-community/strapi-module/issues/165"
     },
     {
         "name": "@nuxtjs/style-resources",
@@ -200,5 +202,19 @@
         "core": "unknown",
         "maintainers": "@pi0",
         "repoUrl": "https://github.com/nuxt-community/gtm-module"
+    },
+    {
+        "name": "@nuxtjs/toast",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "-",
+        "repoUrl": "https://github.com/nuxt-community/community-modules"
+    },
+    {
+        "name": "@nuxtjs/proxy",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@pi0",
+        "repoUrl": "https://github.com/nuxt-community/proxy-module"
     }
 ]
