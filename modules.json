@@ -95,13 +95,6 @@
         "repoUrl": "https://github.com/nuxt-community/i18n-module"
     },
     {
-        "name": "@nuxtjs/i18n",
-        "bridge": "unknown",
-        "core": "bugged",
-        "maintainers": "@paulgv, @rchl",
-        "repoUrl": "https://github.com/nuxt-community/i18n-module"
-    },
-    {
         "name": "@nuxtjs/redirect-module",
         "bridge": "unknown",
         "core": "bugged",
