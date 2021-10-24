@@ -68,7 +68,7 @@ function filteredList() {
                 type="text"
                 placeholder="Search a module..."
                 autofocus
-                class="rounded-md py-3 border-2 border-gray-500 w-full sm:w-xs"
+                class="rounded-md py-3 border-2 border-gray-500 w-full sm:w-xs dark:bg-nuxt-cliff dark:text-white dark:placeholder-gray-200"
               />
             </form>
           </div>
