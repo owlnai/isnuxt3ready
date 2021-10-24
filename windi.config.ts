@@ -6,6 +6,7 @@ export default defineConfig({
       colors: {
         nuxt: {
           light: "#00DC82",
+          mountain: "#098466",
           darkest: "#012A35",
           dark: "#003543",
         },

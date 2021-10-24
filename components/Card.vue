@@ -15,7 +15,7 @@ function color(status) {
             return "bg-green-800";
 
         case 'pending':
-            return "bg-yellow-500 text-black";
+            return "bg-yellow-500 dark:text-black";
 
         case 'unknown':
             return "bg-gray-700";
@@ -29,7 +29,7 @@ function color(status) {
 }
 </script>
 <template>
-    <article class="rounded-md bg-gradient-to-b from-nuxt-darkest to-[#101B1F] shadow-md">
+    <article class="rounded-md bg-gradient-to-b dark:from-nuxt-darkest dark:to-[#101B1F] from-gray-300 to-[#FFFFFF] shadow-md">
         <div class="p-4">
             <div class="mb-4">
                 <h2 class="font-semibold text-2xl">{{ title }}</h2>
@@ -40,7 +40,7 @@ function color(status) {
                     <Core class="h-6 w-6 mr-2 inline-block" />Nuxt 3
                 </div>
                 <span
-                    :class="`text-xs  font-medium uppercase tracking-wider ${color(core)} py-1 px-4 rounded-full`"
+                    :class="`text-sm text-white  font-medium uppercase tracking-wider ${color(core)} py-1 px-4 rounded-full`"
                 >{{ core }}</span>
             </div>
             <div class="flex justify-between gap-2">
@@ -48,11 +48,11 @@ function color(status) {
                     <Bridge class="h-6 w-6 mr-2 inline-block" />Nuxt Bridge
                 </div>
                 <span
-                    :class="`text-xs font-medium uppercase tracking-wider ${color(bridge)} py-1 px-4 rounded-full`"
+                    :class="`text-sm text-white font-medium uppercase tracking-wider ${color(bridge)} py-1 px-4 rounded-full`"
                 >{{ bridge }}</span>
             </div>
         </div>
-        <div class="flex justify-between p-4 bg-nuxt-darkest rounded-b-md">
+        <div class="flex justify-between p-4 bg-nuxt-light dark:bg-nuxt-darkest rounded-b-md">
             <a class="text-sm items-center inline-flex gap-2" :href="repoUrl" v-if="repoUrl">
                 <GitHub class="h-5 w-5" />
                 {{ repoUrl.split(".com/").pop() }}

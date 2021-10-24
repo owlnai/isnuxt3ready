@@ -55,16 +55,13 @@ export default defineNuxtConfig({
       },
       {
         name: "twitter:title",
-        content:title,
+        content: title,
       },
       {
         name: "twitter:description",
         content: description,
-      }
+      },
     ],
   },
   buildModules: ["nuxt-windicss"],
-  windicss: {
-    analyze: true,
-  },
 });
