@@ -54,7 +54,7 @@ function color(status) {
                 >{{ bridge }}</span>
             </div>
         </div>
-        <div class="flex justify-between p-4 bg-nuxt-grass hover:bg-nuxt-valley dark:bg-nuxt-space rounded-b-md">
+        <div class="flex justify-between p-4 bg-nuxt-grass dark:bg-nuxt-space rounded-b-md">
             <a class="text-sm items-center inline-flex gap-2" :href="repoUrl" v-if="repoUrl">
                 <GitHub class="h-5 w-5" />
                 {{ repoUrl.split(".com/").pop() }}
