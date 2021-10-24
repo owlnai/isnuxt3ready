@@ -37,7 +37,7 @@ import Moon from './components/Moon.vue';
         <section class="my-24">
           <h1 class="text-4xl md:text-[60px] font-bold text-center leading-loose">
             Is
-            <span class="text-nuxt-light">Nuxt 3</span> ready?
+            <span class="text-nuxt-grass">Nuxt 3</span> ready?
           </h1>
           <p
             class="text-center text-md md:text-lg mt-6 text-green-900 dark:text-green-100"
@@ -45,20 +45,20 @@ import Moon from './components/Moon.vue';
           <div class="flex flex-col sm:flex-row justify-center gap-4 my-6">
             <a
               href="/api/modules"
-              class="border-green-800 dark:hover:bg-nuxt-dark hover:bg-green-200 hover:bg-opacity-50 dark:text-white border-2 py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+              class="border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 dark:text-white border-2 py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
             >
               <GetApi />Explore API data
             </a>
             <a
               href="https://github.com/owlnai/isnuxt3ready"
-              class="border-green-800 dark:hover:bg-nuxt-dark hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+              class="border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
             >
               <GitStar />Star this project
             </a>
             <UseDark v-slot="{ isDark, toggleDark }">
               <span
                 @click="toggleDark()"
-                class="select-none cursor-pointer border-green-800 dark:hover:bg-nuxt-dark hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+                class="select-none cursor-pointer border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
               >
                 <template v-if="isDark">
                   <Moon />

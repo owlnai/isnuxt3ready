@@ -5,10 +5,11 @@ export default defineConfig({
     extend: {
       colors: {
         nuxt: {
-          light: "#00DC82",
+          grass: "#00DC82",
+          valley: "#00A963",
           mountain: "#098466",
-          darkest: "#012A35",
-          dark: "#003543",
+          cliff: "#012A35",
+          space: "#003543",
         },
       },
       fontFamily: {
