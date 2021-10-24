@@ -58,7 +58,19 @@ function filteredList() {
             </UseDark>
           </div>
           <div class="flex justify-center mt-12">
-            <input v-model="search" type="text" placeholder="Search a module..." autofocus class="rounded-md py-3 border-2  border-gray-500 w-full sm:w-xs" />
+            <form role="search" action="#">
+              <label for="header-search">
+                <span class="sr-only">Search</span>
+              </label>
+              <input
+                id="header-search"
+                v-model="search"
+                type="text"
+                placeholder="Search a module..."
+                autofocus
+                class="rounded-md py-3 border-2 border-gray-500 w-full sm:w-xs"
+              />
+            </form>
           </div>
         </section>
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 grid-flow-row my-12">
