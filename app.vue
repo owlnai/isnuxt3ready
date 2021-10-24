@@ -1,40 +1,27 @@
 <script setup>
 const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
 import { UseDark } from '@vueuse/components'
-import Moon from './components/Moon.vue';
-</script>
+import { ref } from 'vue'
 
-<style>
-.dark .blurry-gradient {
-  @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
-  background: radial-gradient(
-      circle at 15% 50%,
-      #09846655,
-      rgba(255, 255, 255, 0) 25%
-    ),
-    radial-gradient(circle at 85% 30%, #003543, rgba(255, 255, 255, 0) 25%);
+const search = ref('');
+
+function filteredList() {
+  return data.value.filter(post => {
+    return post.name.toLowerCase().includes(search.value.toLowerCase())
+  });
 }
-.blurry-gradient {
-  @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
-  background: radial-gradient(
-      circle at 15% 50%,
-      #2bf3c13a,
-      rgba(255, 255, 255, 0) 25%
-    ),
-    radial-gradient(circle at 85% 30%, #1691a146, rgba(255, 255, 255, 0) 25%);
-}
-</style>
+</script>
 
 <template>
   <Title>Is Nuxt 3 ready?</Title>
   <Head lang="en-US" />
   <div
-    class="dark:bg-[#151718] dark:text-gray-200 text-gray-800 bg-gray-200 min-h-screen font-sans"
+    class="dark:bg-[#151718] dark:text-gray-200 text-gray-800 bg-gray-100 min-h-screen font-sans"
   >
     <div class="blurry-gradient"></div>
     <div class="p-4 sm:p-8 z-20 relative">
       <div class="max-w-6xl mx-auto">
-        <section class="my-24">
+        <section class="my-16">
           <h1 class="text-4xl md:text-[60px] font-bold text-center leading-loose">
             Is
             <span class="text-nuxt-grass">Nuxt 3</span> ready?
@@ -70,10 +57,13 @@ import Moon from './components/Moon.vue';
               </span>
             </UseDark>
           </div>
+          <div class="flex justify-center">
+            <input v-model="search" type="text" placeholder="Search a module..." autofocus class="rounded-md py-3 border-2  border-gray-500 min-w-xs" />
+          </div>
         </section>
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 grid-flow-row my-12">
           <Card
-            v-for="module in data"
+            v-for="module in filteredList()"
             :key="module.name"
             :title="module.name"
             :bridge="module.bridge"
@@ -86,7 +76,10 @@ import Moon from './components/Moon.vue';
             class="rounded-md border-2 border-gray-500 border-dashed p-4 flex flex-col justify-center items-center text-center"
           >
             <h2 class="text-2xl font-semibold mb-2">Missing a module?</h2>
-            <a href="https://github.com/owlnai/isnuxt3ready/issues/new?assignees=&labels=module+request&template=new-module.md&title=%5BMODULE+REQUEST%5D" class="underline">Request it</a>
+            <a
+              href="https://github.com/owlnai/isnuxt3ready/issues/new?assignees=&labels=module+request&template=new-module.md&title=%5BMODULE+REQUEST%5D"
+              class="underline"
+            >Request it</a>
           </div>
         </section>
         <footer class="text-center">
@@ -101,3 +94,24 @@ import Moon from './components/Moon.vue';
     </div>
   </div>
 </template>
+
+<style>
+.dark .blurry-gradient {
+  @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
+  background: radial-gradient(
+      circle at 15% 50%,
+      #09846655,
+      rgba(255, 255, 255, 0) 25%
+    ),
+    radial-gradient(circle at 85% 30%, #003543, rgba(255, 255, 255, 0) 25%);
+}
+.blurry-gradient {
+  @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
+  background: radial-gradient(
+      circle at 15% 50%,
+      #2bf3c13a,
+      rgba(255, 255, 255, 0) 25%
+    ),
+    radial-gradient(circle at 85% 30%, #1691a146, rgba(255, 255, 255, 0) 25%);
+}
+</style>
