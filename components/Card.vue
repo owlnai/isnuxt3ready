@@ -35,7 +35,17 @@ function color(status) {
         <div class="p-4">
             <div class="mb-4">
                 <h2 class="font-semibold text-2xl">{{ title }}</h2>
-                <p class="text-sm">{{ maintainers || '-' }}</p>
+                <p class="text-sm">
+                    <a
+                        :href="'https://github.com/' + maintainer.replace('@', '')"
+                        v-for="(maintainer, index) in maintainers.split(', ')"
+                        v-if="maintainers"
+                    >
+                        <template v-if="index > 0">,</template>
+                        {{ maintainer }}
+                    </a>
+                    <template v-else>-</template>
+                </p>
             </div>
             <div class="flex justify-between mb-2">
                 <div>
