@@ -11,5 +11,5 @@ _Is Nuxt 3 Ready_ offers a free API for developers and repo maintainers. Note th
 - `unknown` ❓ To be tested
 - `bugged` ❗ Reported issues
 - `unsupported` ❌ Won't be supported
-## Updating data
-Data is located at `./modules.json`. Please, make sure the JSON is valid before comitting.
+## Contributing or updating data
+Please see [the CONTRIBUTING guide](CONTRIBUTING.md).
