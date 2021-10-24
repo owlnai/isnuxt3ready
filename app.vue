@@ -32,20 +32,20 @@ function filteredList() {
           <div class="flex flex-col sm:flex-row justify-center gap-4 my-6">
             <a
               href="/api/modules"
-              class="border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 dark:text-white border-2 py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+              class="border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 dark:text-white border-2 py-2 px-6 rounded-md font-medium inline-flex gap-3 justify-center"
             >
               <GetApi />Explore API data
             </a>
             <a
               href="https://github.com/owlnai/isnuxt3ready"
-              class="border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+              class="border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 justify-center"
             >
               <GitStar />Star this project
             </a>
             <UseDark v-slot="{ isDark, toggleDark }">
               <span
                 @click="toggleDark()"
-                class="select-none cursor-pointer border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 text-center"
+                class="select-none cursor-pointer border-green-800 dark:hover:bg-nuxt-cliff hover:bg-green-200 hover:bg-opacity-50 border-2 dark:text-white py-2 px-6 rounded-md font-medium inline-flex gap-3 justify-center"
               >
                 <template v-if="isDark">
                   <Moon />
@@ -57,8 +57,8 @@ function filteredList() {
               </span>
             </UseDark>
           </div>
-          <div class="flex justify-center">
-            <input v-model="search" type="text" placeholder="Search a module..." autofocus class="rounded-md py-3 border-2  border-gray-500 min-w-xs" />
+          <div class="flex justify-center mt-12">
+            <input v-model="search" type="text" placeholder="Search a module..." autofocus class="rounded-md py-3 border-2  border-gray-500 w-full sm:w-xs" />
           </div>
         </section>
         <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 grid-flow-row my-12">
