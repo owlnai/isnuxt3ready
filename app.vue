@@ -82,6 +82,12 @@ import Moon from './components/Moon.vue';
             :issueUrl="module.issueUrl"
             :maintainers="module.maintainers"
           />
+          <div
+            class="rounded-md border-2 border-gray-500 border-dashed p-4 flex flex-col justify-center items-center text-center"
+          >
+            <h2 class="text-2xl font-semibold mb-2">Missing a module?</h2>
+            <a href="https://github.com/owlnai/isnuxt3ready/issues/new?assignees=&labels=module+request&template=new-module.md&title=%5BMODULE+REQUEST%5D" class="underline">Request it</a>
+          </div>
         </section>
         <footer class="text-center">
           Built with ♥️ by
