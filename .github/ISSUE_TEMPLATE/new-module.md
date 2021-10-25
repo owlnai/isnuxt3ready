@@ -1,7 +1,7 @@
 ---
 name: New module
 about: Request a new Nuxt 3 module to be added
-title: "[MODULE REQUEST]"
+title: "MODULE NAME HERE"
 labels: module request
 assignees: ''
 
