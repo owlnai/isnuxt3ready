@@ -234,5 +234,12 @@
         "maintainers": "@pi0",
         "repoUrl": "https://github.com/nuxt-community/nuxt-extend",
         "issueUrl": "https://github.com/nuxt/rfcs/issues/30"
+    },
+    {
+        "name": "nuxt-buefy",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@jtommy",
+        "repoUrl": "https://github.com/buefy/nuxt-buefy"
     }
 ]
