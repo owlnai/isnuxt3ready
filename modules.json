@@ -169,7 +169,7 @@
     },
     {
         "name": "@nuxtjs/google-fonts",
-        "bridge": "unknown",
+        "bridge": "ready",
         "core": "bugged",
         "maintainers": "@ricardogobbosouza",
         "repoUrl": "https://github.com/nuxt-community/google-fonts-module"
