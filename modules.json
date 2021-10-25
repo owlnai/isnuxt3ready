@@ -209,5 +209,13 @@
         "core": "unknown",
         "maintainers": "@pi0",
         "repoUrl": "https://github.com/nuxt-community/proxy-module"
+    },
+    {
+        "name": "@nuxtjs/storybook",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@pi0",
+        "repoUrl": "https://github.com/nuxt-community/storybook",
+        "issueUrl": "https://github.com/nuxt-community/storybook/issues/330"
     }
 ]
