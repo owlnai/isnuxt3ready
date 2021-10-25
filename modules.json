@@ -40,11 +40,12 @@
         "bridge": "unknown",
         "core": "pending",
         "maintainers": "@pi0",
-        "repoUrl": "https://github.com/nuxt-community/auth-module"
+        "repoUrl": "https://github.com/nuxt-community/auth-module",
+        "issueUrl": "https://github.com/nuxt-community/auth-module/issues/1323"
     },
     {
         "name": "@nuxtjs/axios",
-        "bridge": "unknown",
+        "bridge": "ready",
         "core": "bugged",
         "maintainers": "@pi0",
         "repoUrl": "https://github.com/nuxt-community/axios-module",
@@ -169,7 +170,7 @@
     },
     {
         "name": "@nuxtjs/google-fonts",
-        "bridge": "unknown",
+        "bridge": "ready",
         "core": "bugged",
         "maintainers": "@ricardogobbosouza",
         "repoUrl": "https://github.com/nuxt-community/google-fonts-module"
@@ -198,7 +199,7 @@
     },
     {
         "name": "@nuxtjs/toast",
-        "bridge": "unknown",
+        "bridge": "ready",
         "core": "bugged",
         "maintainers": "-",
         "repoUrl": "https://github.com/nuxt-community/community-modules"
@@ -209,5 +210,21 @@
         "core": "unknown",
         "maintainers": "@pi0",
         "repoUrl": "https://github.com/nuxt-community/proxy-module"
+    },
+    {
+        "name": "@nuxtjs/storybook",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@pi0",
+        "repoUrl": "https://github.com/nuxt-community/storybook",
+        "issueUrl": "https://github.com/nuxt-community/storybook/issues/330"
+    },
+    {
+        "name": "storyblok-nuxt",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@DominikAngerer",
+        "repoUrl": "https://github.com/storyblok/storyblok-nuxt",
+        "issueUrl": "https://github.com/storyblok/storyblok-nuxt/issues/62"
     }
 ]
