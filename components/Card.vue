@@ -37,6 +37,7 @@ function color(status) {
                 <h2 class="font-semibold text-2xl">{{ title }}</h2>
                 <p class="text-sm">
                     <a
+                        class="text-nuxt-mountain hover:underline"
                         :href="'https://github.com/' + maintainer.replace('@', '')"
                         v-for="(maintainer, index) in maintainers.split(', ')"
                         v-if="maintainers"
@@ -65,7 +66,7 @@ function color(status) {
             </div>
         </div>
         <div class="flex justify-between p-4 bg-nuxt-grass dark:bg-nuxt-space rounded-b-md">
-            <a class="text-sm items-center inline-flex gap-2" :href="repoUrl" v-if="repoUrl">
+            <a class="text-sm items-center inline-flex gap-2 hover:underline" :href="repoUrl" v-if="repoUrl">
                 <GitHub class="h-5 w-5" />
                 {{ repoUrl.split(".com/").pop() }}
             </a>
