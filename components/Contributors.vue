@@ -5,7 +5,8 @@ const avatar_size = 35;
 
 const { data: contributors } = await useAsyncData(
     'contributors',
-    () => $fetch(`https://api.github.com/repos/${repo}/contributors`)
+    () => $fetch(`https://api.github.com/repos/${repo}/contributors`
+        , { server: false })
 );
 </script>
 <template>
