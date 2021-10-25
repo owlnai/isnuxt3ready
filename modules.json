@@ -198,7 +198,7 @@
     },
     {
         "name": "@nuxtjs/toast",
-        "bridge": "unknown",
+        "bridge": "ready",
         "core": "bugged",
         "maintainers": "-",
         "repoUrl": "https://github.com/nuxt-community/community-modules"
