@@ -96,8 +96,8 @@ function filteredList() {
         </section>
         <footer class="text-center mb-4 flex justify-between">
           <div>
-            Built with ♥️ by
-            <Contributors />and other maintainers.
+  
+            <Contributors />
           </div>
           <div>
             <a href="https://github.com/owlnai/isnuxt3ready" class="underline">Contribute</a>
