@@ -210,5 +210,13 @@
         "core": "unknown",
         "maintainers": "@pi0",
         "repoUrl": "https://github.com/nuxt-community/proxy-module"
+    },
+    {
+        "name": "storyblok-nuxt",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@DominikAngerer",
+        "repoUrl": "https://github.com/storyblok/storyblok-nuxt",
+        "issueUrl": "https://github.com/storyblok/storyblok-nuxt/issues/62"
     }
 ]
