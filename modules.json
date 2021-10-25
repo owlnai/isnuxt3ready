@@ -40,7 +40,8 @@
         "bridge": "unknown",
         "core": "pending",
         "maintainers": "@pi0",
-        "repoUrl": "https://github.com/nuxt-community/auth-module"
+        "repoUrl": "https://github.com/nuxt-community/auth-module",
+        "issueUrl": "https://github.com/nuxt-community/auth-module/issues/1323"
     },
     {
         "name": "@nuxtjs/axios",
