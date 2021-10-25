@@ -1,7 +1,12 @@
 <script setup>
-const { data: contributors } = await useAsyncData('contributors', () => $fetch('https://api.github.com/repos/owlnai/isnuxt3ready/contributors'));
+const repo = "owlnai/isnuxt3ready";
 const max_contributors = 8;
-const avatar_size = "30";
+const avatar_size = 30;
+
+const { data: contributors } = await useAsyncData(
+    'contributors',
+    () => $fetch(`https://api.github.com/repos/${repo}/contributors`)
+);
 </script>
 <template>
     <div class="inline-flex -space-x-1 overflow-hidden mx-2">
