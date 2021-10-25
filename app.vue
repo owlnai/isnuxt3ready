@@ -94,13 +94,14 @@ function filteredList() {
             >Request it</a>
           </div>
         </section>
-        <footer class="text-center">
-          Built with ♥️ by
-          <a href="https://owln.ai" class="underline">@owlnai</a> and other maintainers.
-          <a
-            href="https://github.com/owlnai/isnuxt3ready"
-            class="underline"
-          >Contribute</a>
+        <footer class="text-center mb-4 flex justify-between">
+          <div>
+            Built with ♥️ by
+            <Contributors />and other maintainers.
+          </div>
+          <div>
+            <a href="https://github.com/owlnai/isnuxt3ready" class="underline">Contribute</a>
+          </div>
         </footer>
       </div>
     </div>
