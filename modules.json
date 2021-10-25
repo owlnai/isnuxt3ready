@@ -44,7 +44,7 @@
     },
     {
         "name": "@nuxtjs/axios",
-        "bridge": "unknown",
+        "bridge": "ready",
         "core": "bugged",
         "maintainers": "@pi0",
         "repoUrl": "https://github.com/nuxt-community/axios-module",
