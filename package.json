@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxt dev --trace-warnings",
+    "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "node .output/server/index.mjs"
   },
