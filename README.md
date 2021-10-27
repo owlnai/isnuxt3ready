@@ -1,3 +1,5 @@
+> Is Nuxt 3 Ready has been archived in favor of https://modules.nuxtjs.org. Please, head to the new site.
+---
 # Is Nuxt 3 ready?
 Your best up-to-date guide for the compatibility for Nuxt 3 modules. Built using Nuxt 3 and WindiCSS. Based on the initial work by @pi0 and inspired by [_Is Apple Silicon ready?_](https://isapplesiliconready.com)
 
