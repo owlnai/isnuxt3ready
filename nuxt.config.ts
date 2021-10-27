@@ -6,6 +6,9 @@ const ogImage = "https://isnuxt3ready.owln.ai/og.png";
 
 export default defineNuxtConfig({
   meta: {
+    htmlAttrs: {
+      lang: "en",
+    },
     link: [
       {
         rel: "preconnect",

@@ -7,11 +7,11 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "nuxt-windicss": "^2.0.4",
+    "nuxt-windicss": "latest",
     "nuxt3": "latest"
   },
   "dependencies": {
-    "@vueuse/components": "^6.7.3",
-    "@vueuse/core": "^6.7.3"
+    "@vueuse/components": "latest",
+    "@vueuse/core": "latest"
   }
 }

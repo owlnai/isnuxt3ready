@@ -5,11 +5,24 @@ import { ref } from 'vue'
 
 const search = ref('');
 
-function filteredList() {
-  return data.value.filter(post => {
-    return post.name.toLowerCase().includes(search.value.toLowerCase())
-  });
-}
+const bridgeStatus = ref('');
+const coreStatus = ref('');
+
+const readinessTypes = [
+  "",
+  "✅ Ready",
+  "❗ Bugged",
+  "🚧 Pending",
+  "❓ Unknown",
+  "❌ Unsupported"
+]
+
+const moduleSearch = computed(() =>
+  data.value.filter(post =>
+    post.name.includes(search.value.toLowerCase()) && (bridgeStatus.value ? bridgeStatus.value == post.bridge : true) && (coreStatus.value ? coreStatus.value == post.core : true)
+  )
+);
+
 </script>
 
 <template>
@@ -21,7 +34,7 @@ function filteredList() {
     <div class="blurry-gradient"></div>
     <div class="p-4 sm:p-8 z-20 relative">
       <div class="max-w-6xl mx-auto">
-        <section class="my-16">
+        <section class="mt-16">
           <h1 class="text-4xl md:text-[60px] font-bold text-center leading-loose">
             Is
             <span class="text-nuxt-grass">Nuxt 3</span> ready?
@@ -57,25 +70,66 @@ function filteredList() {
               </span>
             </UseDark>
           </div>
-          <div class="flex justify-center mt-12">
-            <form role="search" action="#">
-              <label for="header-search">
-                <span class="sr-only">Search</span>
-              </label>
+          <div class="flex items-center max-w-2xl mx-auto">
+            <label for="header-search">
+              <span class="sr-only">Search</span>
+            </label>
+            <div class="relative flex items-center w-full">
               <input
                 id="header-search"
                 v-model="search"
                 type="text"
                 placeholder="Search a module..."
                 autofocus
-                class="rounded-md py-3 border-2 border-gray-500 w-full sm:w-xs dark:bg-nuxt-cliff dark:text-white dark:placeholder-gray-200"
+                class="rounded-md py-3 border-2 border-gray-500 w-full dark:bg-nuxt-cliff dark:text-white dark:placeholder-gray-200"
               />
-            </form>
+              <Search class="w-7 h-7 text-gray-400 absolute right-5" />
+            </div>
           </div>
+          <form role="search" action="#" class="mt-16 flex justify-between items-center">
+            <div class="inline-flex text-md gap-2">
+              Showing
+              <b>{{ moduleSearch.length }}</b> modules with
+              <label for="coreStatus">
+                <span class="sr-only">Type of Nuxt 3 compatibility</span>
+              </label>
+              <select
+                id="coreStatus"
+                name="coreStatus"
+                v-model="coreStatus"
+                class="bg-transparent border-0 border-b-2 dark:bg-nuxt-cliff dark:text-white dark:placeholder-gray-200"
+              >
+                <option
+                  v-for="(type, index) in readinessTypes"
+                  :key="type"
+                  :selected="index == 0"
+                  :value="index == 0 ? '' : type.split(' ').pop().toLowerCase()"
+                >{{ index == 0 ? 'All' : type }}</option>
+              </select>
+              Nuxt 3 compatibility and
+              <label for="bridgeStatus">
+                <span class="sr-only">Type of Nuxt Bridge compatibility</span>
+              </label>
+              <select
+                id="bridgeStatus"
+                name="bridgeStatus"
+                v-model="bridgeStatus"
+                class="bg-transparent border-0 border-b-2 dark:bg-nuxt-cliff dark:text-white dark:placeholder-gray-200"
+              >
+                <option
+                  v-for="(type, index) in readinessTypes"
+                  :key="type"
+                  :selected="index == 0"
+                  :value="index == 0 ? '' : type.split(' ').pop().toLowerCase()"
+                >{{ index == 0 ? 'All' : type }}</option>
+              </select>
+              Nuxt Bridge compatibility:
+            </div>
+          </form>
         </section>
-        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 grid-flow-row my-12">
+        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 grid-flow-row my-6">
           <Card
-            v-for="module in filteredList()"
+            v-for="module in moduleSearch"
             :key="module.name"
             :title="module.name"
             :bridge="module.bridge"
@@ -96,7 +150,6 @@ function filteredList() {
         </section>
         <footer class="text-center mb-4 flex justify-between">
           <div>
-  
             <Contributors />
           </div>
           <div>
