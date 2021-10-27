@@ -97,9 +97,10 @@ const moduleSearch = computed(() =>
                 id="coreStatus"
                 name="coreStatus"
                 v-model="coreStatus"
-                class="bg-transparent border-0 border-b-2 dark:bg-nuxt-cliff dark:text-white dark:placeholder-gray-200"
+                class="bg-transparent border-0 border-b-2"
               >
                 <option
+                  class="dark:text-white dark:placeholder-gray-200 dark:bg-nuxt-cliff"
                   v-for="(type, index) in readinessTypes"
                   :key="type"
                   :selected="index == 0"
@@ -114,9 +115,10 @@ const moduleSearch = computed(() =>
                 id="bridgeStatus"
                 name="bridgeStatus"
                 v-model="bridgeStatus"
-                class="bg-transparent border-0 border-b-2 dark:bg-nuxt-cliff dark:text-white dark:placeholder-gray-200"
+                class="bg-transparent border-0 border-b-2"
               >
                 <option
+                  class="dark:text-white dark:placeholder-gray-200 dark:bg-nuxt-cliff"
                   v-for="(type, index) in readinessTypes"
                   :key="type"
                   :selected="index == 0"
@@ -162,15 +164,6 @@ const moduleSearch = computed(() =>
 </template>
 
 <style>
-.dark .blurry-gradient {
-  @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
-  background: radial-gradient(
-      circle at 15% 50%,
-      #09846655,
-      rgba(255, 255, 255, 0) 25%
-    ),
-    radial-gradient(circle at 85% 30%, #003543, rgba(255, 255, 255, 0) 25%);
-}
 .blurry-gradient {
   @apply w-full top-0 left-0 h-screen hidden sm:block fixed overflow-hidden z-10;
   background: radial-gradient(
@@ -179,5 +172,13 @@ const moduleSearch = computed(() =>
       rgba(255, 255, 255, 0) 25%
     ),
     radial-gradient(circle at 85% 30%, #1691a146, rgba(255, 255, 255, 0) 25%);
+}
+.dark .blurry-gradient {
+  background: radial-gradient(
+      circle at 15% 50%,
+      #09846655,
+      rgba(255, 255, 255, 0) 25%
+    ),
+    radial-gradient(circle at 85% 30%, #003543, rgba(255, 255, 255, 0) 25%);
 }
 </style>

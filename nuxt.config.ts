@@ -2,7 +2,7 @@ import { defineNuxtConfig } from "nuxt3";
 const description = "A community-built compatibility guide for Nuxt 3 modules";
 const title = "Is Nuxt 3 Ready?";
 const url = "https://isnuxt3ready.owln.ai/";
-const ogImage = "https://isnuxt3ready.owln.ai/og.png";
+const ogImage = "https://isnuxt3ready.owln.ai/og.jpg";
 
 export default defineNuxtConfig({
   meta: {

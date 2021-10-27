@@ -10,7 +10,7 @@ const { data: contributors } = await useAsyncData(
 );
 </script>
 <template>
-    <div class="inline-flex items-center overflow-hidden mx-2" v-if="contributors">
+    <div class="inline-flex items-center mx-2" v-if="contributors">
         <span class="mr-3">Built with ♥️ by</span>
         <a
             v-for="contributor in contributors.slice(0, max_contributors)"
