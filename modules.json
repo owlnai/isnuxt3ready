@@ -256,5 +256,35 @@
         "maintainers": "@cagataycivici",
         "repoUrl": "https://github.com/primefaces/primevue",
         "issueUrl": "https://github.com/primefaces/primevue/issues/1660"
+    },
+    {
+        "name": "@nuxtjs/web-vitals",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@cagataycivici",
+        "repoUrl": "https://github.com/nuxt-community/web-vitals-module",
+        "issueUrl": "https://github.com/nuxt-community/web-vitals-module/issues/23"
+    },
+        {
+        "name": "@nuxtjs/fontawesome",
+        "bridge": "unknown",
+        "core": "unknown",
+        "maintainers": "@pimlie",
+        "repoUrl": "https://github.com/nuxt-community/fontawesome-module"
+    },
+    {
+        "name": "@nuxtjs/robots",
+        "bridge": "unknown",
+        "core": "bugged",
+        "maintainers": "@ricardogobbosouza",
+        "repoUrl": "https://github.com/nuxt-community/robots-module"
+    },
+    {
+       "name": "@nuxtjs/moment",
+       "bridge": "unknown",
+       "core": "bugged",
+       "maintainers": "@ricardogobbosouza",
+       "repoUrl": "https://github.com/nuxt-community/moment-module",
+       "issueUrl": "https://github.com/nuxt-community/moment-module/issues/82"
     }
 ]
