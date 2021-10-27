@@ -35,6 +35,9 @@ const moduleSearch = computed(() =>
     <div class="p-4 sm:p-8 z-20 relative">
       <div class="max-w-6xl mx-auto">
         <section class="mt-16">
+          <a href="https://modules.nuxtjs.org"
+            class="block font-medium max-w-2xl text-sm mx-auto w-full border-2 border-blue-300 my-6 bg-blue-50 rounded-md p-4 transform hover:-translate-y-1 transition-transform ease-linear text-center"
+          >Is Nuxt 3 Ready has been archived in favor of modules.nuxtjs.org. Please, head to the new site.</a>
           <h1 class="text-4xl md:text-[60px] font-bold text-center leading-loose">
             Is
             <span class="text-nuxt-grass">Nuxt 3</span> ready?
@@ -145,7 +148,7 @@ const moduleSearch = computed(() =>
           >
             <h2 class="text-2xl font-semibold mb-2">Missing a module?</h2>
             <a
-              href="https://github.com/owlnai/isnuxt3ready/issues/new?assignees=&labels=module+request&template=new-module.md&title=%5BMODULE+REQUEST%5D"
+              href="https://github.com/nuxt/modules/issues/new"
               class="underline"
             >Request it</a>
           </div>
@@ -155,7 +158,7 @@ const moduleSearch = computed(() =>
             <Contributors />
           </div>
           <div>
-            <a href="https://github.com/owlnai/isnuxt3ready" class="underline">Contribute</a>
+            <a href="https://github.com/nuxt/modules" class="underline">Contribute</a>
           </div>
         </footer>
       </div>
