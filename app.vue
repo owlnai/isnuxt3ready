@@ -87,7 +87,7 @@ const moduleSearch = computed(() =>
             </div>
           </div>
           <form role="search" action="#" class="mt-16 flex justify-between items-center">
-            <div class="inline-flex text-md gap-2">
+            <div class="inline-flex flex-wrap text-md gap-2">
               Showing
               <b>{{ moduleSearch.length }}</b> modules with
               <label for="coreStatus">
