@@ -2,12 +2,9 @@
 const { data } = await useAsyncData('modules', () => $fetch('/api/modules'));
 import { UseDark } from '@vueuse/components'
 import { ref } from 'vue'
-
 const search = ref('');
-
 const bridgeStatus = ref('');
 const coreStatus = ref('');
-
 const readinessTypes = [
   "",
   "✅ Ready",
@@ -16,13 +13,11 @@ const readinessTypes = [
   "❓ Unknown",
   "❌ Unsupported"
 ]
-
 const moduleSearch = computed(() =>
   data.value.filter(post =>
     post.name.includes(search.value.toLowerCase()) && (bridgeStatus.value ? bridgeStatus.value == post.bridge : true) && (coreStatus.value ? coreStatus.value == post.core : true)
   )
 );
-
 </script>
 
 <template>
@@ -36,7 +31,7 @@ const moduleSearch = computed(() =>
       <div class="max-w-6xl mx-auto">
         <section class="mt-16">
           <a href="https://modules.nuxtjs.org"
-            class="block font-medium max-w-2xl text-sm mx-auto w-full border-2 border-blue-300 my-6 bg-blue-50 rounded-md p-4 transform hover:-translate-y-1 transition-transform ease-linear text-center"
+            class="block font-medium max-w-2xl text-sm mx-auto w-full border-2 border-blue-300 my-6 bg-blue-50 rounded-md p-4 transform hover:-translate-y-1 transition-transform ease-linear text-center text-black"
           >Is Nuxt 3 Ready has been archived in favor of modules.nuxtjs.org. Please, head to the new site.</a>
           <h1 class="text-4xl md:text-[60px] font-bold text-center leading-loose">
             Is
