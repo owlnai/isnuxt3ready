@@ -286,5 +286,12 @@
        "maintainers": "@ricardogobbosouza",
        "repoUrl": "https://github.com/nuxt-community/moment-module",
        "issueUrl": "https://github.com/nuxt-community/moment-module/issues/82"
+    },
+        {
+       "name": "v-tooltip/nuxt",
+       "bridge": "unknown",
+       "core": "ready",
+       "maintainers": "@Akryum",
+       "repoUrl": "https://github.com/Akryum/v-tooltip",
     }
 ]
